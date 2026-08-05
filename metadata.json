@@ -1,0 +1,8 @@
+{
+  "name": "Devil Labs - Digital Agency Showcase",
+  "description": "Interactive showcase and agency website for Devil Labs (.dev), featuring cutting-edge web development, AI integration services, project portfolio, interactive demo tools, and client inquiry portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-tech: 'Chakra Petch', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B0C0E;
+    color: #F4F4F6;
+  }
+}
+
+.font-tech {
+  font-family: var(--font-tech);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom Industrial Metallic Gradients */
+.bg-graphite {
+  background-color: #121316;
+}
+
+.bg-machined {
+  background: linear-gradient(135deg, #181A1F 0%, #101114 100%);
+}
+
+.bg-metal-surface {
+  background: radial-gradient(circle at 50% 0%, #20242B 0%, #0E1013 80%);
+}
+
+.border-metal {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.border-metal-highlight {
+  border-color: rgba(225, 29, 72, 0.4);
+}
+
+/* Custom Grid Pattern Background */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Precision Crimson Glow */
+.glow-crimson {
+  box-shadow: 0 0 25px -5px rgba(225, 29, 72, 0.35);
+}
+
+.text-glow-crimson {
+  text-shadow: 0 0 12px rgba(225, 29, 72, 0.6);
+}
+
+/* Custom Scrollbar for Industrial OS Interfaces */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0C0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #23272F;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E11D48;
+}
+
+/* Metallic Sheen Keyframes */
+@keyframes metallicShine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animate-shine {
+  animation: metallicShine 4s infinite linear;
+}
